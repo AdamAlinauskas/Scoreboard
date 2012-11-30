@@ -1,0 +1,13 @@
+%html
+	%head
+		%title= title
+	%body
+		%h1{:style=>'color:orange'}= title.upcase
+		- scoreboard.each do |name, cards|
+			%h2= name
+			-cards.each do |card|
+				%div
+					%span{:style=>'font-weight:bold;color:green'} Game:
+					%span= card.game
+					%span{:style=>'font-weight:bold;color:green'} Score:
+					%span= card.score
