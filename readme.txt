@@ -1,0 +1,1 @@
+This scoreboard project is my first project using heroku with ruby using the haml view engine.
